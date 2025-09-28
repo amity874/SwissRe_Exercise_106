@@ -35,7 +35,7 @@ Reporting line too long: Alice EmployeeX exceeds by 2 managers <br/>
 1. CEO Identification <br/>
 The CEO has no manager (managerId is empty or null).<br/>
 
-Reporting Line Rules <br/>
+2 .Reporting Line Rules <br/>
 The reporting line is the chain of managers between an employee and the CEO. <br/>
 Count the number of managers above the employee in this hierarchy.<br/>
 Any employee with more than 4 managers between them and the CEO is considered to have a “too long” reporting line.<br/>
