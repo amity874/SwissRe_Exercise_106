@@ -23,13 +23,13 @@ Id,firstName,lastName,salary,managerId <br/>
 305,Brett,Hardleaf,34000,300 <br/>
 
 ### Output Format
-Martin Manager1 earns too LITTLE by 12000.00
-Laura Manager2 earns too LITTLE by 10000.00
-Peter Manager3 earns too LITTLE by 8000.00
-Susan Manager4 earns too LITTLE by 6000.00
-Raj Manager5 earns too LITTLE by 4000.00
-Reporting line too long: Raj Manager5 exceeds by 1 managers
-Reporting line too long: Alice EmployeeX exceeds by 2 managers
+Martin Manager1 earns too LITTLE by 12000.00 <br/>
+Laura Manager2 earns too LITTLE by 10000.00 <br/>
+Peter Manager3 earns too LITTLE by 8000.00 <br/>
+Susan Manager4 earns too LITTLE by 6000.00 <br/>
+Raj Manager5 earns too LITTLE by 4000.00 <br/>
+Reporting line too long: Raj Manager5 exceeds by 1 managers <br/>
+Reporting line too long: Alice EmployeeX exceeds by 2 managers <br/>
 
 Additional Resources
 
