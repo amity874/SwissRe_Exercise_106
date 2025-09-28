@@ -23,7 +23,7 @@ Id,firstName,lastName,salary,managerId
 300,Alice,Hasacat,50000,124
 305,Brett,Hardleaf,34000,300
 
-Sample Output
+### Output Format
 Martin Manager1 earns too LITTLE by 12000.00
 Laura Manager2 earns too LITTLE by 10000.00
 Peter Manager3 earns too LITTLE by 8000.00
@@ -32,8 +32,8 @@ Raj Manager5 earns too LITTLE by 4000.00
 Reporting line too long: Raj Manager5 exceeds by 1 managers
 Reporting line too long: Alice EmployeeX exceeds by 2 managers
 
-Further test cases are added in Assumption.txt(src/main/resources/Assumption.txt) file
-
+## Further test cases are added in Assumption.txt(src/main/resources/Assumption.txt) file
+## 1000 line test case also added in Assumption.txt
 Assumptions
 CSV columns can be in any order but header names must exist.
 Empty salary is treated as 0.0.
