@@ -14,13 +14,13 @@ BIG COMPANY wants to analyze its organizational structure to:
    Identify employees who have **more than 4 managers** between them and the CEO.
 
 ### Input Format
-A CSV file in the following format:
-Id,firstName,lastName,salary,managerId
-123,Joe,Doe,60000,
-124,Martin,Chekov,45000,123
-125,Bob,Ronstad,47000,123
-300,Alice,Hasacat,50000,124
-305,Brett,Hardleaf,34000,300
+A CSV file in the following format:<br/>
+Id,firstName,lastName,salary,managerId <br/>
+123,Joe,Doe,60000,<br/>
+124,Martin,Chekov,45000,123 <br/>
+125,Bob,Ronstad,47000,123 <br/>
+300,Alice,Hasacat,50000,124 <br/>
+305,Brett,Hardleaf,34000,300 <br/>
 
 ### Output Format
 Martin Manager1 earns too LITTLE by 12000.00
