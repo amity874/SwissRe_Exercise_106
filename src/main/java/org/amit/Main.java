@@ -53,9 +53,9 @@ public class Main {
     public static void main(String[] args) throws Exception {
         String csvFilePath="src/main/resources/Employee.csv";
         List<Employee> employeeList= CsvReader.readCsv(csvFilePath);
-        for (Employee e:employeeList){
+        /*for (Employee e:employeeList){
             System.out.println(e);
-        }
+        }*/
         //to fetch manager id quickly adding into map this represent employee map
         Map<String,Employee> EmpMap=new HashMap<>();
         for(Employee emp:employeeList){
