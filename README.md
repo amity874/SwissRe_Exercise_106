@@ -32,10 +32,7 @@ Raj Manager5 earns too LITTLE by 4000.00
 Reporting line too long: Raj Manager5 exceeds by 1 managers
 Reporting line too long: Alice EmployeeX exceeds by 2 managers
 
-## Further test cases are added in Assumption.txt(src/main/resources/Assumption.txt) file
-## 1000 line test case also added in Assumption.txt
-###Assumptions
-** CSV columns can be in any order but header names must exist.
-** Empty salary is treated as 0.0.
-** Empty or missing managerId means the employee is the CEO.
-** If no CEO is found, the application throws an exception.
+Additional Resources
+
+## Detailed Assumptions: See src/main/resources/Assumption.txt for comprehensive test scenarios
+## Large Scale Testing: 1000-line test case included for performance validation
