@@ -35,12 +35,41 @@ Reporting line too long: Alice EmployeeX exceeds by 2 managers <br/>
 1. CEO Identification <br/>
 The CEO has no manager (managerId is empty or null).<br/>
 
-2. Salary Compliance <br/>
-A manager’s direct subordinates are only the employees who list that manager’s Id as their managerId.<br/>
-Salary rules:<br/>
-Minimum: 20% more than the average salary of direct subordinates.<br/>
-Maximum: 50% more than the average salary of direct subordinates.<br/>
-Only direct subordinates are used to calculate the average, not indirect reports.<br/>
+Reporting Line Rules <br/>
+The reporting line is the chain of managers between an employee and the CEO. <br/>
+Count the number of managers above the employee in this hierarchy.<br/>
+Any employee with more than 4 managers between them and the CEO is considered to have a “too long” reporting line.<br/>
+The number of exceeding managers is calculated as:<br/>
+exceed_count = reporting_line_length - 4 <br/>
+Id,firstName,lastName,salary,managerId <br/>
+1,CEO,Boss,150000,<br/>
+2,L1,M1,120000,1 <br/>
+3,L2,M2,110000,2 <br/>
+4,L3,M3,100000,3 <br/>
+5,L4,M4,90000,4 <br/>
+6,L5,M5,80000,5 <br/>
+7,L6,M6,70000,6 <br/>
+8,E1,Employee,60000,7<br/>
+
+CEO Boss <br/>
+ └─ L1 M1 <br/>
+      └─ L2 M2 <br/>
+           └─ L3 M3 <br/>
+                └─ L4 M4 <br/>
+                     └─ L5 M5 <br/>
+                          └─ L6 M6 <br/>
+                               └─ E1 Employee <br/>
+
+
+Reporting Line Violations: <br/>
+L5 M5 has 5 managers above → exceeds limit by 1.<br/>
+L6 M6 has 6 managers above → exceeds limit by 2.<br/>
+E1 Employee has 7 managers above → exceeds limit by 3.<br/>
+Employees L1–L4 are within the limit → no violation reported.<br/>
+Output Example for Reporting Line Violations:<br/>
+Reporting line too long: L5 M5 exceeds by 1 managers<br/>
+Reporting line too long: L6 M6 exceeds by 2 managers<br/>
+Reporting line too long: E1 Employee exceeds by 3 managers<br/>
 
 3.Edge cases<br/>
 Assuming there is  no circular references (i.e., no manager is indirectly their own subordinate).<br/> 
