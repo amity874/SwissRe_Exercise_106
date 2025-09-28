@@ -15,7 +15,6 @@ BIG COMPANY wants to analyze its organizational structure to:
 
 ### Input Format
 A CSV file in the following format:
-
 Id,firstName,lastName,salary,managerId
 123,Joe,Doe,60000,
 124,Martin,Chekov,45000,123
