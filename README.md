@@ -33,5 +33,5 @@ Reporting line too long: Alice EmployeeX exceeds by 2 managers <br/>
 
 Additional Resources
 
-# Detailed Assumptions: See src/main/resources/Assumption.txt for comprehensive test scenarios
-# Large Scale Testing: 1000-line test case included for performance validation
+### Detailed Assumptions: See src/main/resources/Assumption.txt for comprehensive test scenarios
+### Large Scale Testing: 1000-line test case included for performance validation
